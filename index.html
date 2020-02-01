@@ -1,14 +1,44 @@
 <!doctype html>
-<html ng-app>
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
-  </head>
-  <body>
-    <div>
-      <label>Name:</label>
-      <input type="text" ng-model="yourName" placeholder="Enter a name here">
-      <hr>
-      <h1>Hello {{yourName}}!</h1>
-    </div>
-  </body>
+<html ng-app="ngApp">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="./app.js"></script>
+    </head>
+    <body>
+        <h1>Vast Interactive Rulebook</h1>
+        <div ng-controller='configController'>
+            <fieldset>
+                <legend>Configuration</legend>
+                <label>
+                    Base Game: <select id="game" ng-model="game">
+                        <option value="tcc">The Crystal Caverns</option>
+                        <option value="tmm">The Mysterious Manor</option>
+                    </select>
+                </label><br/>
+                <label>
+                    Player 1: <select id="p1" ng-model="p1">
+                        <option value=""></option>
+                        <option value="knight"      class="hero">The Knight</option>
+                        <option value="paladin"     class="hero">The Paladin</option>
+                        <option value="armorknight" class="hero">The Armored Knight</option>
+                        <option value="goblins"     class="vermin">The Goblins</option>
+                        <option value="skeletons"   class="vermin">The Skeletons</option>
+                        <option value="vileghoul"   class="vermin">The Vile Ghoul</option>
+                        <option value="dragon"      class="monster">The Dragon</option>
+                        <option value="spider"      class="monster">The Spider</option>
+                        <option value="nightmareunicorn" class="monster">The Nightmare Unicorn</option>
+                        <option value="shadowpaladin" class="monster">The Shadow Paladin</option>
+                        <option value="cave"        class="dungeon">The Cave</option>
+                        <option value="manor"       class="dungeon">The Manor</option>
+                        <option value="caveghost"   class="dungeon">The Cave Ghost</option>
+                        <option value="thief"       class="thief">The Thief</option>
+                        <option value="warlock"     class="thief">The Warlock</option>
+                        <option value="ghoul"       class="ghoul">The Ghoul</option>
+                        <option value="ghost"       class="ghost">The Ghost</option>
+                    </select>
+                </label>
+            </fieldset>
+        </div>
+    </body>
 </html>

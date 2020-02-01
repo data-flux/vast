@@ -1,0 +1,18 @@
+html {
+    /*background-color: black;*/
+}
+
+body {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+}
+
+option.hero     { background-color: #a1792e; color: white; }
+option.vermin   { background-color: #317a3b; color: white; }
+option.monster  { background-color: #881822; color: white; }
+option.dungeon  { background-color: #451b57; color: white; }
+option.thief    { background-color: #464748; color: white; }
+option.ghoul    { background-color: #da511d; color: white; }
+option.ghost    { background-color: #0f4e8c; color: white; }
